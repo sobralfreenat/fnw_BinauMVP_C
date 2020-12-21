@@ -183,3 +183,365 @@ function dragElement(elmnt) {
     }
     initPayPalButton();
   </script>
+
+
+
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/recaptcha.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <div id="custom-html-1">
+
+
+
+
+<p>&nbsp;</p>
+
+<h2>FNW SESSSION</h2>
+
+<form action="/action_page.php"><label for="cliente">Cliente:</label> <select id="foco" name="foco"><option value="== Select ==r">== Select ==</option><option value="celia@espacojacobucci.com.br">celia@espacojacobucci.com.br</option><option value="tatiana@oximag.com ">tatiana@oximag.com</option><option value="bonilhaligia655@gmail.com">bonilhaligia655@gmail.com</option><option value="arianetsantos@gmail.com">arianetsantos@gmail.com</option><option value="arnaldoaraujodecarvalho@gmail.com">arnaldoaraujodecarvalho@gmail.com</option><option value="janelamattina.psico.mkt@gmail.com">janelamattina.psico.mkt@gmail.com</option><option value="____________">____________</option><option value="sobral.freenat@gmail.comr">sobral.freenat@gmail.com</option><option value="eoxidev@gmail.comr">eoxidev@gmail.com</option><option value="nic.freenatv@gmail.comr">nic.freenat@gmail.com</option></select>
+
+<p>&nbsp;</p>
+
+<p><button onclick="document.getElementById('date_time_button').innerHTML = Date()" type="button">START SESSION.</button></p>
+
+<p id="date_time_button">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h3>Negócio / Empresa / Empresário(a) / Cargo / Pessoa&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+<label for="Negócio">Ecolha o foco:</label> <select id="foco" name="foco"><option value="Negócio">Negócio</option><option value="Empresa">Empresa</option><option value="Empresário(a)">Empresário(a)</option><option value="Cargo/ Profissão">Cargo/ Profissão</option><option value="Pessoa">Pessoa</option> </select> &gt;&nbsp;&nbsp;
+
+<p>&nbsp;</p>
+
+<p>___________</p>
+
+<p>&nbsp;</p>
+
+<h3>Estratégia / Tática / Operação</h3>
+<label for="ETO">Ecolha o foco:</label> <select id="foco" name="foco"><option value="Estratégia">Estratégia</option><option value="Tática">Tática</option><option value="Operação">Operação</option> </select> &gt;</form>
+
+<p><br>
+<style type="text/css">#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #1113;
+  color: #fff;
+}
+</style>
+</p>
+
+<div id="mydiv">
+<div id="mydivheader">=</div>
+
+<div>&nbsp;</div>
+
+<div>
+<form class="form" style="border: 1px dotted rgb(255, 0, 0); padding: 2px;">
+<div class="form-group"><textarea class="textarea" cols="72" rows="1" style="cursor: default;"></textarea></div>
+</form>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="./css/style.css" rel="stylesheet">
+<form class="form">
+<div class="form-group"><textarea class="textarea" name="PRIORIDADE">PRIORIDADE
+
+-
+
+-
+
+-
+  
+  </textarea>&nbsp;</div>
+</form>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="./css/style.css" rel="stylesheet">
+<form class="form">
+<div class="form-group"><textarea class="textarea" name="TOPICOS">TOPICOS
+
+-
+
+-
+
+-</textarea>&nbsp;</div>
+</form>
+
+<p><button onclick="document.getElementById('demo').innerHTML = Date()" type="button">SESSION END</button></p>
+
+<p id="demo">&nbsp;</p>
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<p>Click the button to print the current page.</p>
+
+<p><button onclick="window.print()">Save</button></p>
+</div>
+
+<section class="features9 businessm4_features9 cid-si4L4sUT1u" id="features9-4">
+
+	
+
+	
+
+	<div class="container">
+		<div class="media-container-row">
+			<div class="card col-12 col-md-4">
+				
+				
+				<div class="mbr-section-btn pt-2"><a class="btn btn-md btn-success display-4" href="#" data-toggle="modal" data-target="#mbr-popup-3">fnw session</a></div>
+			</div>
+			<div class="card col-12 col-md-4">
+				<div class="card-img">
+					<img src="assets/images/12.jpg" alt="">
+				</div>
+				<div class="card-box">
+					
+					
+					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#top">top</a></div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-4">
+				<div class="card-img">
+					<img src="assets/images/11.jpg" alt="">
+				</div>
+				<div class="card-box">
+					
+					
+					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="index.html#video2-2">down</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="video2 cid-si4I8yxX1I" data-bg-video="https://sobralfreenat.github.io/webpresentation/?loop=0&amp;autoplay=0" id="video2-2">
+    
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
+    <div class="container-fluid">
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-12 video-block">
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal mbr-popup cid-si4IjiJmTT fade" tabindex="-1" role="dialog" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-3" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="mbr-text mbr-fonts-style display-7">fnw session</p>
+
+                    <div>
+                        
+                            <div class="video-block mbr-figure"><iframe class="mbr-embedded-video" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="mbr-section-btn"><a class="btn btn-md btn-success display-4" href="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit#gid=1704681404">
+                                Abrir Fora</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/playervimeo/vimeo_player.js"></script>
+  <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+  <script src="assets/popup-plugin/script.js"></script>
+  <script src="assets/popup-video-plugin/script.js"></script>
+  <script src="assets/popup-overlay-plugin/script.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid.min.js"></script>
+  
+  
+  
+</body>
+</html>
+
+<p>Click the button to print the current page.</p>
+
+<p>Save</p>
+
+<div class="container">
+<div class="media-container-row">
+<div class="card col-12 col-md-4">
+<div class="mbr-section-btn pt-2"><a class="btn btn-md btn-success display-4" href="#">fnw session</a></div>
+</div>
+
+<div class="card col-12 col-md-4">
+<div class="card-img"><img alt="" src="assets/images/12.jpg" /></div>
+
+<div class="card-box">
+<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#top">top</a></div>
+</div>
+</div>
+
+<div class="card col-12 col-md-4">
+<div class="card-img"><img alt="" src="assets/images/11.jpg" /></div>
+
+<div class="card-box">
+<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="index.html#video2-2">down</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);">&nbsp;</div>
+
+<div class="container-fluid">
+<div class="row justify-content-center mt-4">
+<div class="col-12 col-md-12 video-block">
+<div class="video-wrapper"><iframe allowfullscreen="" class="mbr-embedded-video" frameborder="0" height="720" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280"></iframe></div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="modal mbr-popup cid-si4IjiJmTT fade" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-3" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">&nbsp;</div>
+
+<div class="modal-body">
+<p>fnw session</p>
+
+<div>
+<div class="video-block mbr-figure"><iframe allowfullscreen="" class="mbr-embedded-video" frameborder="0" height="720" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280"></iframe></div>
+</div>
+</div>
+
+<div class="modal-footer">
+<div class="mbr-section-btn"><a class="btn btn-md btn-success display-4" href="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit#gid=1704681404">Abrir Fora</a></div>
+</div>
+</div>
+</div>
+</div>
+<script src="assets/web/assets/jquery/jquery.min.js"></script><script src="assets/popper/popper.min.js"></script><script src="assets/tether/tether.min.js"></script><script src="assets/bootstrap/js/bootstrap.min.js"></script><script src="assets/smoothscroll/smooth-scroll.js"></script><script src="assets/playervimeo/vimeo_player.js"></script><script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script><script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script><script src="assets/popup-plugin/script.js"></script><script src="assets/popup-video-plugin/script.js"></script><script src="assets/popup-overlay-plugin/script.js"></script><script src="assets/theme/js/script.js"></script><script src="assets/formoid.min.js"></script>
+
+<p>/</p>
+
+<p><iframe allow="camera; microphone; fullscreen; display-capture" src="https://meet.jit.si/testelivelmsestudioyt" style="height: 100%; width: 100%; border: 0px;"></iframe></p>
+
+</div>
+				<div class="card-box">
+					
+					
+					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#top">top</a></div>
+				</div>
+			</div>
+			<div class="card col-12 col-md-4">
+				<div class="card-img">
+					<img src="assets/images/11.jpg" alt="">
+				</div>
+				<div class="card-box">
+					
+					
+					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="index.html#video2-2">down</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
