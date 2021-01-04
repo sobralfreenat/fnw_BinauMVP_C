@@ -1,12 +1,79 @@
+<!-- //navigation bar html">--> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f3f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF95;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#FNW SESSSION">FNW SESSION</a>
+  <a href="#form-group">form</a>
+  <a href="#smart-button-container">Pay</a>
+  <a href="#demo">save</a>
+  <a href="#about">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- //fnwsession html">--> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 </head>
 <body>
+<!-- //link on page down">--> 
+<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#down">down_to_jitsi</a></div>
 <p>&nbsp;</p>
 
 <h2>FNW SESSSION</h2>
+					
+				</div>
+			</div>
+            
+		</div>
+	</div>
+</section>
 
 <form action="/action_page.php"><label for="cliente">Cliente:</label> <select id="foco" name="foco"><option value="== Select ==r">== Select ==</option><option value="celia@espacojacobucci.com.br">celia@espacojacobucci.com.br</option><option value="tatiana@oximag.com ">tatiana@oximag.com</option><option value="bonilhaligia655@gmail.com">bonilhaligia655@gmail.com</option><option value="arianetsantos@gmail.com">arianetsantos@gmail.com</option><option value="arnaldoaraujodecarvalho@gmail.com">arnaldoaraujodecarvalho@gmail.com</option><option value="janelamattina.psico.mkt@gmail.com">janelamattina.psico.mkt@gmail.com</option><option value="____________">____________</option><option value="sobral.freenat@gmail.comr">sobral.freenat@gmail.com</option><option value="eoxidev@gmail.comr">eoxidev@gmail.com</option><option value="nic.freenatv@gmail.comr">nic.freenat@gmail.com</option></select>
 
@@ -54,11 +121,11 @@
 <div id="mydiv">
 <div id="mydivheader">=</div>
 
-<div>&nbsp;</div>
+<div> [drag] &nbsp;</div>
 
 <div>
-<form class="form" style="border: 1px dotted rgb(255, 0, 0); padding: 2px;">
-<div class="form-group"><textarea class="textarea" cols="72" rows="1" style="cursor: default;"></textarea></div>
+<form class="form" style="border: 2px dotted rgb(222, 0, 0); padding: 2px;">
+<div class="form-group"><textarea class="textarea" cols="52" rows="3" style="cursor: default;"></textarea></div>
 </form>
 </div>
 </div>
@@ -143,15 +210,55 @@ function dragElement(elmnt) {
 </script>
 
 <p>Click the button to print the current page.</p>
+  
+ 
 
+  
 <p><button onclick="window.print()">Save</button></p>
 
+===================================================
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
 
-  <div id="smart-button-container">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Suporte - Planejamento. Produção e Tecnolgia">Suporte - Planejamento. Produção e Tecnologia</td></tr><tr><td><select name="os0">
+	<option value="Mentoria 3 x Semana">Mentoria 3 x Semana : R$8.000,00 BRL - mensal</option>
+	<option value="Assessoria 2 x semana">Assessoria 2 x semana : R$4.000,00 BRL - mensal</option>
+	<option value="Cosultoria 1 x semana">Cosultoria 1 x semana : R$2.000,00 BRL - mensal</option>
+	<option value="Suporte Planejamentoo 2 x mes">Suporte Planejamentoo 2 x mes : R$960,00 BRL - mensal</option>
+	<option value="Suporte Decisão 2 x por mes">Suporte Decisão 2 x por mes : R$670,00 BRL - mensal</option>
+	<option value="Suporte Produção 2 x por mes">Suporte Produção 2 x por mes : R$550,00 BRL - mensal</option>
+	<option value="Suporte Tecnologia 1 x por mes">Suporte Tecnologia 1 x por mes : R$400,00 BRL - mensal</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+----------------------------------------------------------------------------------------
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
+
+<!--//paypal button and code">
+-->
+
+apagar essa linha inteira para habilitar botal payipal<!--//
+<div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
       </div>
-    </div>
+      
+
+  </textarea>opção&nbsp;</div>
+<p><p>
+
+
+   </div>
   <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
@@ -183,140 +290,52 @@ function dragElement(elmnt) {
     }
     initPayPalButton();
   </script>
+ <!-- //fim paypal code button">--> 
+ ===================================================
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
 
+<!-- INICIO DO BOTAO PAGSEGURO --><a href="https://pag.ae/7WKQq1_YR/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-cinza.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a><!-- FIM DO BOTAO PAGSEGURO -->
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
+-----------------------------
 
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
 
+ <!-- //paragrafos de searacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
 
-<section class="video2 cid-si4I8yxX1I" data-bg-video="https://sobralfreenat.github.io/webpresentation/?loop=0&amp;autoplay=0" id="video2-2">
-    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
-    <div class="container-fluid">
-        
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-12 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="modal mbr-popup cid-si4IjiJmTT fade" tabindex="-1" role="dialog" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-3" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
-                            <path d="M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <p class="mbr-text mbr-fonts-style display-7">fnw session</p>
-
-                    <div>
-                        
-                            <div class="video-block mbr-figure"><iframe class="mbr-embedded-video" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-
-                            
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <div class="mbr-section-btn"><a class="btn btn-md btn-success display-4" href="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit#gid=1704681404">
-                                Abrir Fora</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-<script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/playervimeo/vimeo_player.js"></script>
-  <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/popup-plugin/script.js"></script>
-  <script src="assets/popup-video-plugin/script.js"></script>
-  <script src="assets/popup-overlay-plugin/script.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid.min.js"></script>
-  
-  
-  
-</body>
-</html>
-
-<p>Click the button to print the current page.</p>
-
-<p>Save</p>
-
-<div class="container">
-<div class="media-container-row">
-<div class="card col-12 col-md-4">
-<div class="mbr-section-btn pt-2"><a class="btn btn-md btn-success display-4" href="#">fnw session</a></div>
-</div>
-
-<div class="card col-12 col-md-4">
-<div class="card-img"><img alt="" src="assets/images/12.jpg" /></div>
-
-<div class="card-box">
-<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#top">top</a></div>
-</div>
-</div>
-
-<div class="card col-12 col-md-4">
-<div class="card-img"><img alt="" src="assets/images/11.jpg" /></div>
-
-<div class="card-box">
-<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="index.html#video2-2">down</a></div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(255, 255, 255);">&nbsp;</div>
-
-<div class="container-fluid">
-<div class="row justify-content-center mt-4">
-<div class="col-12 col-md-12 video-block">
+<!-- //googlesheets fnw tempplate">--> 
 <div class="video-wrapper"><iframe allowfullscreen="" class="mbr-embedded-video" frameborder="0" height="720" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280"></iframe></div>
 </div>
 </div>
-</div>
 
-<div aria-hidden="true" class="modal mbr-popup cid-si4IjiJmTT fade" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-3" role="dialog" tabindex="-1">
-<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-<div class="modal-content">
-<div class="modal-header">&nbsp;</div>
+<!-- //paragrafos de separacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
+<!-- //paragrafos de separacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
 
-<div class="modal-body">
-<p>fnw session</p>
 
-<div>
-<div class="video-block mbr-figure"><iframe allowfullscreen="" class="mbr-embedded-video" frameborder="0" height="720" src="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit?loop=0&amp;autoplay=0#gid=1704681404" width="1280"></iframe></div>
-</div>
-</div>
-
-<div class="modal-footer">
-<div class="mbr-section-btn"><a class="btn btn-md btn-success display-4" href="https://docs.google.com/spreadsheets/d/15a0gRmUC_uSpS9brtVN_sub7as0dmlCXX_MAj6Sgris/edit#gid=1704681404">Abrir Fora</a></div>
-</div>
-</div>
-</div>
-</div>
-<script src="assets/web/assets/jquery/jquery.min.js"></script><script src="assets/popper/popper.min.js"></script><script src="assets/tether/tether.min.js"></script><script src="assets/bootstrap/js/bootstrap.min.js"></script><script src="assets/smoothscroll/smooth-scroll.js"></script><script src="assets/playervimeo/vimeo_player.js"></script><script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script><script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script><script src="assets/popup-plugin/script.js"></script><script src="assets/popup-video-plugin/script.js"></script><script src="assets/popup-overlay-plugin/script.js"></script><script src="assets/theme/js/script.js"></script><script src="assets/formoid.min.js"></script>
-
-<p>/</p>
-
-<p><iframe allow="camera; microphone; fullscreen; display-capture" src="https://meet.jit.si/testelivelmsestudioyt" style="height: 100%; width: 100%; border: 0px;"></iframe></p>
+<!-- //jitsi video conference">--> 
+<p><iframe allow="camera; microphone; fullscreen; display-capture" src="https://meet.jit.si/testelivelmsestudioyt" style="height: 800px; width: 100%; border: 0px;"></iframe></p>
 
 </div>
-				<div class="card-box">
+
+<!-- //paragrafos de separacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
+
+
+
+<!-- //link on page top">--> 
+<div class="card-box">
 					
 					
 					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#top">top</a></div>
@@ -327,11 +346,27 @@ function dragElement(elmnt) {
 					<img src="assets/images/11.jpg" alt="">
 				</div>
 				<div class="card-box">
-					
-					
-					<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="index.html#video2-2">down</a></div>
+
+
+<!-- //paragrafos de separacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>
+
+<!-- //link on page down">--> 
+<div class="mbr-section-btn"><a class="btn-underline mr-3 text-primary display-4" href="#down">down_to_jitsi</a></div>
 				</div>
+   
+ <!-- //paragrafos de separacao de linhas">--> 
+ </textarea>&nbsp;</div>
+<p><p><p><p><p><p><p><p><p><p>  
+
+
+
+<!-- //link on paypal">--> 
+<div class="mbr-section-btn"><a class="btn-mr-4 mr-5 text-primary display-4" href="#sb&currency=USD">paypal</a></div>
 			</div>
 		</div>
 	</div>
 </section>
+
+
