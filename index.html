@@ -7,18 +7,38 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center; /* Centraliza todo o conteúdo */
+        }
+
+        #image-container {
+            margin: 20px;
+        }
+
+        #image-container img {
+            max-width: 450px; /* Garante que a imagem não ultrapasse a largura da tela */
+            height: auto; /* Mantém a proporção da imagem */
         }
 
         #genre-selection, #user-info {
-            margin: 20px;
+            margin: 20px auto; /* Centraliza os containers */
+            width: fit-content; /* Ajusta a largura dos containers ao seu conteúdo */
         }
 
         .field {
             margin: 5px 0;
         }
+
+        form {
+            display: inline-block; /* Alinha os formulários para que fiquem centralizados */
+            text-align: left; /* Alinha o texto dos formulários à esquerda */
+        }
     </style>
 </head>
 <body>
+    <div id="image-container">
+        <img src="https://raw.githubusercontent.com/pcoitino/hits3Daudio/main/img/banner.png" alt="Imagem Descrição">
+    </div>
+
     <div id="user-info">
         <h2>Informações do Usuário:</h2>
         <form id="user-form">
@@ -83,6 +103,17 @@
                         window.location.href = 'https://pcoitino.github.io/audio3D2/';
                     }, 2000); // Ajuste o tempo conforme necessário
                 }
+            });
+
+            const checkboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', function() {
+                    const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]:checked');
+                    if (checkedCheckboxes.length > 3) {
+                        alert('Você só pode selecionar até 3 estilos musicais.');
+                        checkbox.checked = false;
+                    }
+                });
             });
         });
     </script>
