@@ -15,7 +15,7 @@
         }
 
         #image-container img {
-            max-width: 450px; /* Garante que a imagem não ultrapasse a largura da tela */
+            max-width: 250px; /* Garante que a imagem não ultrapasse a largura da tela */
             height: auto; /* Mantém a proporção da imagem */
         }
 
@@ -38,9 +38,12 @@
     <div id="image-container">
         <img src="https://raw.githubusercontent.com/pcoitino/hits3Daudio/main/img/banner.png" alt="Imagem Descrição">
     </div>
-
+<br>
+<br>
     <div id="user-info">
-        <h2>Informações do Usuário:</h2>
+        <h2>MVP - Lab C</h2>
+		<h4>Coleta de Preferencias do Usuário</h4>
+		<h5>NÂO ENVIAMOS SPAM</h5>
         <form id="user-form">
             <div class="field">
                 <label for="name">Nome:</label>
@@ -77,7 +80,9 @@
                 <label for="electronic">Electronic</label>
             </div>
             <div class="field">
-                <button type="submit">Confirmar Seleção</button>
+<br>
+<br>
+                <button type="submit">Enviar Seleção</button>
             </div>
         </form>
     </div>
@@ -101,7 +106,7 @@
                     window.location.href = mailtoLink;
                     setTimeout(function() {
                         window.location.href = 'https://pcoitino.github.io/audio3D2/';
-                    }, 2000); // Ajuste o tempo conforme necessário
+                    }, 5000); // Ajuste o tempo conforme necessário
                 }
             });
 
