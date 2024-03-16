@@ -15,8 +15,11 @@
         }
 
         #image-container img {
-            max-width: 250px; /* Garante que a imagem não ultrapasse a largura da tela */
-            height: auto; /* Mantém a proporção da imagem */
+            max-width: 30%; /* Defina a largura máxima da imagem */
+            margin-bottom: 20px; /* Espaçamento inferior */
+            display: block; /* Para alinhar a imagem ao centro */
+            margin-left: auto; /* Alinha a imagem à direita */
+            margin-right: auto; /* Alinha a imagem à esquerda */
         }
 
         #genre-selection, #user-info {
@@ -42,7 +45,7 @@
             background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             justify-content: center;
-            align-items: left;
+            align-items: center; /* Alinha verticalmente */
             visibility: hidden; /* Esconder inicialmente */
         }
 
@@ -61,63 +64,55 @@
     </style>
 </head>
 <body>
-    <div id="terms-popup" class="popup-container" style='text-align:left'>
-    <div class="popup-content">
-        <h1>Termos e Condições</h1>
-        <br>
-        <p>Ao continuar, você aceita os <a href="#">Termos e Condições</a>.</p>
+<div id="terms-popup" class="popup-container" style='text-align:left; padding: 10px; margin: 10px;'>
+    <div class="popup-content" style="text-align: justify; padding: 20px;">
+        <img src="https://raw.githubusercontent.com/pcoitino/hits3Daudio/main/img/banner.png" alt="Imagem Descrição" style="max-width: 25%; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
+        <h2>Termos e Condições</h2>
+        <br><p>    Ao continuar, você aceita os <a href="#">Termos e Condições</a>.</p>
         <!-- Conteúdo extenso dos termos para demonstrar a rolagem -->
-        <p>Termo de Confidencialidade e Garantia de Acesso Intransferível</p>
-        <br>
-        <p>Este termo estabelece que todas as informações e ferramentas disponibilizadas</p>
-        <br>
-        <p>em nosso sistema de propostas online são estritamente confidenciais e</p>
-        <br>
-        <p>de acesso exclusivo aos usuários autorizados.</p>
-        <br>
-        <p>O acesso a esses recursos é intransferível e requer a concordância</p>
-        <br>
-        <p>em manter a confidencialidade dos dados e informações acessadas.</p>
-        <br>
-        <p>Qualquer divulgação não autorizada ou uso inadequado dessas informações</p>
-        <br>
-        <p>pode resultar em medidas legais. Ao acessar este sistema, você concorda com os termos</p>
-        <br>
-        <p>acima mencionados e se compromete a utilizá-lo de acordo com as diretrizes estabelecidas.</p>
-        <br>
+        <br><p>    Termo de Confidencialidade e Garantia de Acesso Intransferível</p>
+        <br><p>    Este termo estabelece que todas as informações e ferramentas disponibilizadas</p>
+        <br><p>    em nosso sistema de propostas online são estritamente confidenciais e</p>
+       <br><p>     de acesso exclusivo aos usuários autorizados.</p>
+        <br><p>    O acesso a esses recursos é intransferível e requer a concordância</p>
+        <br><p>    em manter a confidencialidade dos dados e informações acessadas.</p>
+        <br><p>    Qualquer divulgação não autorizada ou uso inadequado dessas informações</p>
+        <br><p>    pode resultar em medidas legais. Ao acessar este sistema, você concorda com os termos</p>
+        <br><p>    acima mencionados e se compromete a utilizá-lo de acordo com as diretrizes estabelecidas.</p>
+        <br><br><br><br><br><br><br>
         <!-- Repetir o parágrafo acima várias vezes para garantir a necessidade de rolagem -->
     </div>
 
-    <button id="accept-terms" style="display:block; margin:auto; position: absolute; top: 97%; left: 30%; transform: translate(-50%, -50%);">Aceitar</button>
+    <button id="accept-terms" style="display:block; margin:auto; position: absolute; top: 81%; left: 32%; transform: translate(-50%, -50%);">Aceitar</button>
 
-    <button id="decline-terms" style="display:block; margin:auto; position: absolute; top:97%; left: 50%; transform: translate(-1%, -50%);">Desistir</button>
+    <button id="decline-terms" style="display:block; margin:auto; position: absolute; top:81%; left: 65%; transform: translate(-1%, -50%);">Desistir</button>
+
 </div>
 
-
-    <div id="image-container">
-        <img src="https://raw.githubusercontent.com/pcoitino/hits3Daudio/main/img/banner.png" alt="Imagem Descrição">
-    </div>
+<div id="image-container">
+    <img src="https://raw.githubusercontent.com/pcoitino/hits3Daudio/main/img/banner.png" alt="Imagem Descrição" style="max-width: 30%; margin-bottom: 20px; margin-left: auto; margin-right: auto;">
+</div>
 <br>
 <br>
-    <div id="user-info">
-        <h2>MVP - Lab C</h2>
-        <h5>[PoC from Alex Sobral to Pablo Coitino - v0.0.0.0.0.1.1]</h5>
-        <h3>Coleta de Preferencias do Usuário</h3>
-        <h5>NÃO ENVIAMOS SPAM</h5>
-        <form id="user-form">
-            <div class="field">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="field">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-        </form>
-    </div>
+<div id="user-info">
+    <h2>MVP - Lab C</h2>
+    <h5>[PoC from Alex Sobral to Pablo Coitino - v0.0.0.0.0.1.1]</h5>
+    <h3>Coleta de Preferencias do Usuário</h3>
+    <h5>NÃO ENVIAMOS SPAM</h5>
+    <form id="user-form">
+        <div class="field">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </form>
+</div>
 
-    <div id="genre-selection">
-        <h2>Escolha até 3 estilos musicais:</h2>
+<div id="genre-selection">
+    <h2>Escolha até 3 estilos musicais:</h2>
     <form id="genres-form">
         <div class="field">
             <input type="checkbox" id="rock" name="genre" value="Rock">
@@ -158,73 +153,73 @@
         <div class="field">
             <input type="checkbox" id="metal" name="genre" value="Metal">
             <label for="metal">Metal</label>
-            </div>
-            <div class="field">
-<br>
-<br>
-                <button type="submit">Enviar Seleção</button>
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="field">
+            <br>
+            <br>
+            <button type="submit">Enviar Seleção</button>
+        </div>
+    </form>
+</div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const popup = document.getElementById('terms-popup');
-            const acceptButton = document.getElementById('accept-terms');
-            const declineButton = document.getElementById('decline-terms');
-            const popupContent = document.querySelector('.popup-content');
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('terms-popup');
+        const acceptButton = document.getElementById('accept-terms');
+        const declineButton = document.getElementById('decline-terms');
+        const popupContent = document.querySelector('.popup-content');
 
-            // Mostrar o pop-up
-            popup.style.visibility = 'visible';
+        // Mostrar o pop-up
+        popup.style.visibility = 'visible';
 
-            popupContent.addEventListener('scroll', function() {
-                const isAtBottom = popupContent.scrollHeight - popupContent.scrollTop <= popupContent.clientHeight;
-                if (isAtBottom) {
-                    acceptButton.style.display = 'block';
-                }
-            });
+        popupContent.addEventListener('scroll', function() {
+            const isAtBottom = popupContent.scrollHeight - popupContent.scrollTop <= popupContent.clientHeight;
+            if (isAtBottom) {
+                acceptButton.style.display = 'block';
+            }
+        });
 
-            acceptButton.addEventListener('click', function() {
-                popup.style.visibility = 'hidden';
-                // Aqui você pode adicionar qualquer outra lógica que ocorra após a aceitação
-            });
+        acceptButton.addEventListener('click', function() {
+            popup.style.visibility = 'hidden';
+            // Aqui você pode adicionar qualquer outra lógica que ocorra após a aceitação
+        });
 
-            declineButton.addEventListener('click', function() {
-                window.location.reload();
-            });
+        declineButton.addEventListener('click', function() {
+            window.location.reload();
+        });
 
-            const genresForm = document.getElementById('genres-form');
-            genresForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const selectedGenres = Array.from(document.querySelectorAll('input[name="genre"]:checked')).map(el => el.value);
-                const userName = document.getElementById('name').value;
-                const userEmail = document.getElementById('email').value;
-                if (selectedGenres.length > 3) {
+        const genresForm = document.getElementById('genres-form');
+        genresForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedGenres = Array.from(document.querySelectorAll('input[name="genre"]:checked')).map(el => el.value);
+            const userName = document.getElementById('name').value;
+            const userEmail = document.getElementById('email').value;
+            if (selectedGenres.length > 3) {
+                alert('Você só pode selecionar até 3 estilos musicais.');
+                return;
+            }
+
+            const confirmation = confirm('Após confirmar o envio do e-mail, você será redirecionado. Deseja continuar?');
+            if (confirmation) {
+                const mailtoLink = `mailto:freenat.doc@gmail.com?subject=Seleção de Estilos Musicais&body=Nome: ${encodeURIComponent(userName)}%0AEmail: ${encodeURIComponent(userEmail)}%0AEstilos Selecionados: ${encodeURIComponent(selectedGenres.join(', '))}`;
+                window.location.href = mailtoLink;
+                setTimeout(function() {
+                    window.location.href = 'https://pcoitino.github.io/audio3D2/';
+                }, 5000); // Ajuste o tempo conforme necessário
+            }
+        });
+
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]');
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]:checked');
+                if (checkedCheckboxes.length > 3) {
                     alert('Você só pode selecionar até 3 estilos musicais.');
-                    return;
+                    checkbox.checked = false;
                 }
-                
-                const confirmation = confirm('Após confirmar o envio do e-mail, você será redirecionado. Deseja continuar?');
-                if (confirmation) {
-                    const mailtoLink = `mailto:freenat.doc@gmail.com?subject=Seleção de Estilos Musicais&body=Nome: ${encodeURIComponent(userName)}%0AEmail: ${encodeURIComponent(userEmail)}%0AEstilos Selecionados: ${encodeURIComponent(selectedGenres.join(', '))}`;
-                    window.location.href = mailtoLink;
-                    setTimeout(function() {
-                        window.location.href = 'https://pcoitino.github.io/audio3D2/';
-                    }, 5000); // Ajuste o tempo conforme necessário
-                }
-            });
-
-            const checkboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]');
-            checkboxes.forEach(function(checkbox) {
-                checkbox.addEventListener('change', function() {
-                    const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"][name="genre"]:checked');
-                    if (checkedCheckboxes.length > 3) {
-                        alert('Você só pode selecionar até 3 estilos musicais.');
-                        checkbox.checked = false;
-                    }
-                });
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
